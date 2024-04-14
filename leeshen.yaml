@@ -210,6 +210,6 @@ rules:
   - IP-CIDR,fe80::/10,DIRECT
   - IP-CIDR,119.28.28.28/32,DIRECT
   - IP-CIDR,182.254.116.0/24,DIRECT
-  - GEOSITE,CN,China
+  - GEOSITE,CN,国内
   - GEOIP,CN,🇨🇳 China
   - MATCH,🐟 Final
