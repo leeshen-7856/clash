@@ -1,6 +1,4 @@
 # 来源：leeshen
-
-
 mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
