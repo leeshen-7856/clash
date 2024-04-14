@@ -112,7 +112,7 @@ proxy-groups:
 
   - {name: 🎬 YouTube, <<: *pr}
 
-  - {name: 📟 Telegram, <<: *pr}
+  #- {name: 📟 Telegram, <<: *pr}
 
   - {name: 🎶 Spotify, <<: *pr}
 
@@ -159,7 +159,7 @@ rule-providers:
 
   Twitter: {<<: *rp, url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml", path: ./ruleset/Twitter.yaml}
 
-  YouTube: {<<: *rp, url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml", path: ./ruleset/YouTube.yaml}
+  #YouTube: {<<: *rp, url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml", path: ./ruleset/YouTube.yaml}
 
   Telegram: {<<: *rp, url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml", path: ./ruleset/Telegram.yaml}
 
@@ -206,5 +206,6 @@ rules:
   - IP-CIDR,fe80::/10,DIRECT
   - IP-CIDR,119.28.28.28/32,DIRECT
   - IP-CIDR,182.254.116.0/24,DIRECT
+  - GEOSITE,CN,China
   - GEOIP,CN,🇨🇳 China
   - MATCH,🐟 Final
