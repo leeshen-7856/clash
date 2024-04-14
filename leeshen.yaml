@@ -1,4 +1,6 @@
 # 来源：leeshen
+
+
 mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
@@ -94,8 +96,8 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - ⚖️ 负载均衡-轮询
       - ⚖️ 负载均衡-散列
-      - ️⚖️ 负载均衡-轮询
       - 🍃 手动选择
       - DIRECT
   - {name: ♻️ 自动选择, <<: *u, url: 'https://www.gstatic.com/generate_204', interval: 300, tolerance: 50, type: url-test}
