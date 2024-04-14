@@ -1,6 +1,4 @@
 # 来源：leeshen
-
-
 mixed-port: 7890
 redir-port: 9797
 tproxy-port: 9898
@@ -95,8 +93,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
       - ⚖️ 负载均衡-轮询
+      - ♻️ 自动选择
       - ⚖️ 负载均衡-散列
       - 🍃 手动选择
       - DIRECT
